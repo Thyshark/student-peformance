@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>perfomances</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+        
+        <style>
+            
+          
+            
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        
+    </head>
+    <body>
+        
+        
+        <div class="container">
+            <h1 class="form__title">Student perfomances</h1>
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Percentage marks</th>
+                    </tr>
+                    <tr>
+                        <td>Jack</td>
+                        <td>Doe</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Michael</td>
+                        <td>Jackson</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Kenny</td>
+                        <td>thyshark</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab tab-2">
+                First Name :<input type="text" name="fname" id="fname" required>
+                Last Name :<input type="text" name="lname" id="lname" required>
+                marks :<input type="number" min="0" max="100" required name="marks" id="marks" >
+                
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Delete</button>
+                <button onclick="calculateMedian();">median</button>
+            </div>
+            <canvas id="myChart"></canvas> 
+            <div id="chart"></div>
+
+        </div>
+        <script src="./main.js"></script>
+        
+        <script>
+            
+            
+        </script>
+        
+    </body>
+</html> 
